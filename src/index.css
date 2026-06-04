@@ -424,3 +424,52 @@ a:hover {
     justify-content: center;
   }
 }
+
+/* Contact Section */
+.contact-card {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: var(--card-bg);
+  padding: 50px;
+  border-radius: 20px;
+  border: 1px solid var(--border-color);
+  text-align: center;
+}
+
+.contact-item {
+  margin-bottom: 40px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.contact-info-label {
+  font-size: 20px;
+  color: var(--gold);
+  margin-bottom: 10px;
+}
+
+.contact-info-text {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--text-primary);
+  word-break: break-word;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-card {
+    padding: 30px 20px;
+  }
+  .contact-info-text {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contact-card {
+    padding: 20px 15px;
+  }
+  .contact-info-text {
+    font-size: 18px;
+  }
+}
+
