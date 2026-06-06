@@ -1,8 +1,10 @@
-import React from 'react';
-import { Download, Shield } from 'lucide-react';
-import { motion } from 'framer-motion';
+import React, { useState } from 'react';
+import { Download, Shield, ChevronDown, ChevronUp } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const Biography = ({ setActiveTab }) => {
+  const [showProfile, setShowProfile] = useState(false);
+
   return (
     <div className="hero-section">
       <div className="hero-content">
@@ -19,6 +21,10 @@ const Biography = ({ setActiveTab }) => {
           
           <div className="hero-buttons">
             <button className="btn-primary" onClick={() => setActiveTab('contact')}>Contact Me</button>
+            <button className="btn-outline" onClick={() => setShowProfile(!showProfile)}>
+              {showProfile ? 'Hide Profile' : 'View Full Profile'}
+              {showProfile ? <ChevronUp size={18} /> : <ChevronDown size={18} />}
+            </button>
             <a href="/resume.pdf" download="Dr_Sheela_Resume.pdf" className="btn-outline" style={{ textDecoration: 'none' }}>
               <Download size={18} />
               Resume
@@ -30,6 +36,30 @@ const Biography = ({ setActiveTab }) => {
               </a>
             </div>
           </div>
+
+          <AnimatePresence>
+            {showProfile && (
+              <motion.div
+                initial={{ opacity: 0, height: 0 }}
+                animate={{ opacity: 1, height: 'auto' }}
+                exit={{ opacity: 0, height: 0 }}
+                transition={{ duration: 0.4 }}
+                className="extended-profile"
+                style={{ overflow: 'hidden', marginTop: '30px' }}
+              >
+                <div style={{ backgroundColor: 'var(--card-bg)', padding: '25px', borderRadius: '15px', border: '1px solid var(--border-color)' }}>
+                  <ul style={{ listStylePosition: 'inside', color: 'var(--text-secondary)', fontSize: '15px', display: 'flex', flexDirection: 'column', gap: '12px', paddingLeft: '10px' }}>
+                    <li><strong style={{color: 'var(--text-primary)'}}>Dr. Sheela R.</strong> is a highly accomplished educator and academician with a Doctorate in CS&IT (Periocular Face Recognition).</li>
+                    <li>She is passionate about imparting knowledge and skills to students from diverse backgrounds.</li>
+                    <li>She has Progressive teaching experience of 16+ years in Computer Science Subject. An individual with good communication and interpersonal skills. She has rich experience in teaching and guiding BCA, B.Sc., M.Sc., and MCA students.</li>
+                    <li>Her expertise in the field, ability to deliver engaging lectures, and commitment to education have earned her the respect and admiration of students.</li>
+                    <li>She excels in creating an engaging learning environment. Her teaching methods are widely respected for encouraging in-depth learning and promoting meaningful student interactions.</li>
+                    <li>To her credit, she has a paper published in SCI-indexed journals at King Saud University, contributed a book chapter to IGI Global Publications, and Co-authored two textbooks. She is invited as a resource person at multiple colleges and served as a judge for various inter- and intra-collegiate events.</li>
+                  </ul>
+                </div>
+              </motion.div>
+            )}
+          </AnimatePresence>
         </motion.div>
       </div>
 

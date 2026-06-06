@@ -6,6 +6,7 @@ import EducationSkills from './components/EducationSkills';
 import Research from './components/Research';
 import Publications from './components/Publications';
 import Achievements from './components/Achievements';
+import Certifications from './components/Certifications';
 import Contact from './components/Contact';
 
 const navItems = [
@@ -14,6 +15,7 @@ const navItems = [
   { id: 'education', label: 'Education & Skills' },
   { id: 'publications', label: 'Publications' },
   { id: 'achievements', label: 'Achievements' },
+  { id: 'certifications', label: 'Certifications' },
   { id: 'contact', label: 'Contact' }
 ];
 
@@ -35,6 +37,8 @@ function App() {
         return <Publications />;
       case 'achievements':
         return <Achievements />;
+      case 'certifications':
+        return <Certifications />;
       case 'contact':
         return <Contact />;
       default:

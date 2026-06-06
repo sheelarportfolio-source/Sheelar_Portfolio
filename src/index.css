@@ -176,17 +176,17 @@ a:hover {
 .hero-buttons {
   display: flex;
   align-items: center;
-  gap: 20px;
-  flex-wrap: wrap;
+  gap: 12px;
+  flex-wrap: nowrap;
 }
 
 .btn-primary {
   background-color: var(--gold);
   color: #111;
-  padding: 12px 28px;
+  padding: 12px 20px;
   border-radius: 30px;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 14px;
   border: none;
   cursor: pointer;
   transition: transform 0.2s, background-color 0.2s;
@@ -200,10 +200,10 @@ a:hover {
 .btn-outline {
   background-color: transparent;
   color: var(--gold);
-  padding: 12px 28px;
+  padding: 12px 20px;
   border-radius: 30px;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 14px;
   border: 1px solid var(--gold);
   cursor: pointer;
   transition: all 0.2s;
@@ -219,8 +219,8 @@ a:hover {
 .connect-wrapper {
   display: flex;
   align-items: center;
-  gap: 15px;
-  margin-left: 10px;
+  gap: 10px;
+  margin-left: 0;
 }
 
 .connect-text {
@@ -337,6 +337,7 @@ a:hover {
   
   .hero-buttons {
     justify-content: center;
+    flex-wrap: wrap;
   }
   
   .connect-wrapper {
@@ -470,6 +471,29 @@ a:hover {
   }
   .contact-info-text {
     font-size: 18px;
+  }
+}
+
+/* Reusable Content Card */
+.content-card {
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: var(--card-bg);
+  padding: 40px;
+  border-radius: 20px;
+  border: 1px solid var(--border-color);
+  word-break: break-word;
+}
+
+@media screen and (max-width: 768px) {
+  .content-card {
+    padding: 25px 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .content-card {
+    padding: 20px 15px;
   }
 }
 
