@@ -110,6 +110,14 @@ function App() {
           </motion.div>
         </AnimatePresence>
       </main>
+      <footer className="app-footer">
+        <div className="footer-content">
+          <span className="footer-text">Developed and maintained by</span>
+          <a href="https://skweblabs.in/" target="_blank" rel="noopener noreferrer">
+            <img src="/skweb-logo.png" alt="SK Web Labs" className="skweb-logo" />
+          </a>
+        </div>
+      </footer>
     </div>
   );
 }

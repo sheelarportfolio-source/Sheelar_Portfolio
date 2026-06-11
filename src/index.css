@@ -90,14 +90,35 @@ body {
   cursor: pointer;
   transition: all 0.3s ease;
   color: var(--text-secondary);
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.nav-item::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--gold);
+  transition: width 0.3s ease;
 }
 
 .nav-item:hover {
   color: var(--text-primary);
 }
 
+.nav-item:hover::after {
+  width: 100%;
+}
+
 .nav-item.active {
   color: var(--text-primary);
+}
+
+.nav-item.active::after {
+  width: 100%;
 }
 
 /* Main Content */
@@ -497,3 +518,111 @@ a:hover {
   }
 }
 
+/* App Footer */
+.app-footer {
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 40px;
+  border-top: 1px solid var(--border-color);
+  background-color: rgba(25, 25, 25, 0.5);
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.footer-text {
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+.skweb-logo {
+  height: 40px;
+  object-fit: contain;
+  transition: transform 0.3s;
+}
+.skweb-logo:hover {
+  transform: scale(1.05);
+}
+
+/* Modern Contact Section */
+.modern-contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.contact-subtitle {
+  color: var(--gold);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.contact-title {
+  font-size: 64px;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 60px;
+  font-family: 'Inter', sans-serif;
+}
+
+.contact-info-grid {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contact-item-row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: #aaaaaa;
+}
+
+.contact-item-row svg {
+  color: #aaaaaa;
+  width: 24px;
+  height: 24px;
+}
+
+.contact-item-row a {
+  color: #dddddd;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.contact-item-row a:hover {
+  color: #ffffff;
+}
+
+.contact-item-row.centered {
+  justify-content: center;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-title {
+    font-size: 42px;
+  }
+  .contact-info-grid {
+    flex-direction: column;
+    gap: 25px;
+  }
+  .contact-item-row a {
+    font-size: 18px;
+  }
+}

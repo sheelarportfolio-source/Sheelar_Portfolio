@@ -7,6 +7,28 @@ const Publications = () => {
       <h1 className="section-title">PUBLICATIONS & PATENTS</h1>
       
       <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
+
+                {/* Patents */}
+        <div style={{ marginBottom: '50px', backgroundColor: 'var(--card-bg)', padding: '40px', borderRadius: '20px', border: '1px solid var(--border-color)' }}>
+          <h2 style={{ fontSize: '24px', borderBottom: '2px solid var(--border-color)', paddingBottom: '10px', marginBottom: '20px', color: 'var(--gold)' }}>
+            Patents
+          </h2>
+          <ul style={{ paddingLeft: '0', fontSize: '16px', lineHeight: '1.8', listStyleType: 'none' }}>
+            <li style={{ marginBottom: '20px', padding: '20px', border: '1px solid var(--border-color)', borderRadius: '10px', backgroundColor: 'rgba(255,255,255,0.02)' }}>
+              <strong style={{color: 'var(--text-primary)'}}>Design Patent No:</strong> <span style={{color: 'var(--text-secondary)'}}>6514191</span><br/>
+              <strong style={{color: 'var(--text-primary)'}}>Title:</strong> <span style={{color: 'var(--text-secondary)'}}>Machine Intelligence Supervision Interface with Behavioural Pattern Mapping Display</span><br/>
+              <span style={{color: 'var(--text-secondary)'}}>Certificate of Registration for a UK Design</span>
+            </li>
+            <li style={{ marginBottom: '20px', padding: '20px', border: '1px solid var(--border-color)', borderRadius: '10px', backgroundColor: 'rgba(255,255,255,0.02)' }}>
+              <strong style={{color: 'var(--text-primary)'}}>Patent No:</strong> <span style={{color: 'var(--text-secondary)'}}>202241028512</span><br/>
+              <strong style={{color: 'var(--text-primary)'}}>Title of invention:</strong> <span style={{color: 'var(--text-secondary)'}}>"REGION SPECIFIC AND SUB IMAGE BASED NEIGHBOUR GRADIENT FEATURE EXTRACTION FOR ROBUST PERIOCULAR"</span>
+            </li>
+            <li style={{ marginBottom: '20px', padding: '20px', border: '1px solid var(--border-color)', borderRadius: '10px', backgroundColor: 'rgba(255,255,255,0.02)' }}>
+              <strong style={{color: 'var(--text-primary)'}}>Patent No:</strong> <span style={{color: 'var(--text-secondary)'}}>202241006638</span><br/>
+              <strong style={{color: 'var(--text-primary)'}}>Title of invention:</strong> <span style={{color: 'var(--text-secondary)'}}>"MONITORING OF BODY TEMPERATURE WITH ALERT THROUGH IOT WITHOUT CONTACT TO HUMAN BODY DURING COVID SITUATIONS"</span>
+            </li>
+          </ul>
+        </div>
         
         {/* Book Chapters */}
         <div style={{ marginBottom: '50px', backgroundColor: 'var(--card-bg)', padding: '40px', borderRadius: '20px', border: '1px solid var(--border-color)' }}>
@@ -47,27 +69,7 @@ const Publications = () => {
           </ul>
         </div>
 
-        {/* Patents */}
-        <div style={{ marginBottom: '50px', backgroundColor: 'var(--card-bg)', padding: '40px', borderRadius: '20px', border: '1px solid var(--border-color)' }}>
-          <h2 style={{ fontSize: '24px', borderBottom: '2px solid var(--border-color)', paddingBottom: '10px', marginBottom: '20px', color: 'var(--gold)' }}>
-            Patents
-          </h2>
-          <ul style={{ paddingLeft: '0', fontSize: '16px', lineHeight: '1.8', listStyleType: 'none' }}>
-            <li style={{ marginBottom: '20px', padding: '20px', border: '1px solid var(--border-color)', borderRadius: '10px', backgroundColor: 'rgba(255,255,255,0.02)' }}>
-              <strong style={{color: 'var(--text-primary)'}}>Design Patent No:</strong> <span style={{color: 'var(--text-secondary)'}}>6514191</span><br/>
-              <strong style={{color: 'var(--text-primary)'}}>Title:</strong> <span style={{color: 'var(--text-secondary)'}}>Machine Intelligence Supervision Interface with Behavioural Pattern Mapping Display</span><br/>
-              <span style={{color: 'var(--text-secondary)'}}>Certificate of Registration for a UK Design</span>
-            </li>
-            <li style={{ marginBottom: '20px', padding: '20px', border: '1px solid var(--border-color)', borderRadius: '10px', backgroundColor: 'rgba(255,255,255,0.02)' }}>
-              <strong style={{color: 'var(--text-primary)'}}>Patent No:</strong> <span style={{color: 'var(--text-secondary)'}}>202241028512</span><br/>
-              <strong style={{color: 'var(--text-primary)'}}>Title of invention:</strong> <span style={{color: 'var(--text-secondary)'}}>"REGION SPECIFIC AND SUB IMAGE BASED NEIGHBOUR GRADIENT FEATURE EXTRACTION FOR ROBUST PERIOCULAR"</span>
-            </li>
-            <li style={{ marginBottom: '20px', padding: '20px', border: '1px solid var(--border-color)', borderRadius: '10px', backgroundColor: 'rgba(255,255,255,0.02)' }}>
-              <strong style={{color: 'var(--text-primary)'}}>Patent No:</strong> <span style={{color: 'var(--text-secondary)'}}>202241006638</span><br/>
-              <strong style={{color: 'var(--text-primary)'}}>Title of invention:</strong> <span style={{color: 'var(--text-secondary)'}}>"MONITORING OF BODY TEMPERATURE WITH ALERT THROUGH IOT WITHOUT CONTACT TO HUMAN BODY DURING COVID SITUATIONS"</span>
-            </li>
-          </ul>
-        </div>
+
 
         {/* Research Publications */}
         <div style={{ backgroundColor: 'var(--card-bg)', padding: '40px', borderRadius: '20px', border: '1px solid var(--border-color)' }}>

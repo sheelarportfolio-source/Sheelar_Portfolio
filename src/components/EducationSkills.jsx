@@ -32,19 +32,19 @@ const EducationSkills = () => {
           
           <div style={{ marginBottom: '30px', paddingLeft: '20px', borderLeft: '2px solid var(--gold)' }}>
             <p style={{ fontWeight: '700', color: 'var(--text-secondary)', marginBottom: '5px' }}>November 2022</p>
-            <h3 style={{ fontSize: '18px', fontWeight: '700', marginBottom: '5px' }}>Ph.D. Periocular Face Recognition</h3>
+            <h3 style={{ fontSize: '18px', fontWeight: '700', marginBottom: '5px' }}>Ph.D. in Periocular Face Recognition</h3>
             <p style={{ color: 'var(--text-secondary)' }}>JAIN University, Bengaluru, India</p>
           </div>
 
           <div style={{ marginBottom: '30px', paddingLeft: '20px', borderLeft: '2px solid var(--gold)' }}>
             <p style={{ fontWeight: '700', color: 'var(--text-secondary)', marginBottom: '5px' }}>May 2009</p>
-            <h3 style={{ fontSize: '18px', fontWeight: '700', marginBottom: '5px' }}>MPhil Image Processing</h3>
+            <h3 style={{ fontSize: '18px', fontWeight: '700', marginBottom: '5px' }}>MPhil in Image Processing</h3>
             <p style={{ color: 'var(--text-secondary)' }}>PRIST University, Thanjavur, India</p>
           </div>
 
           <div style={{ paddingLeft: '20px', borderLeft: '2px solid var(--gold)' }}>
             <p style={{ fontWeight: '700', color: 'var(--text-secondary)', marginBottom: '5px' }}>April 2006</p>
-            <h3 style={{ fontSize: '18px', fontWeight: '700', marginBottom: '5px' }}>M.Sc. Computer Science</h3>
+            <h3 style={{ fontSize: '18px', fontWeight: '700', marginBottom: '5px' }}>M.Sc. in Computer Science</h3>
             <p style={{ color: 'var(--text-secondary)' }}>Kuvempu University, Shimoga, India</p>
           </div>
         </div>
