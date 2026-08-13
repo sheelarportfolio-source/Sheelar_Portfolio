@@ -8,6 +8,8 @@ import Publications from './components/Publications';
 import Achievements from './components/Achievements';
 import Certifications from './components/Certifications';
 import Contact from './components/Contact';
+import Blog from './components/Blog';
+import BlogAdmin from './components/BlogAdmin';
 
 const navItems = [
   { id: 'biography', label: 'About' },
@@ -16,11 +18,14 @@ const navItems = [
   { id: 'publications', label: 'Publications' },
   { id: 'achievements', label: 'Achievements' },
   { id: 'certifications', label: 'Certifications' },
+  { id: 'blog', label: 'Blog' },
   { id: 'contact', label: 'Contact' }
 ];
 
 function App() {
-  const [activeTab, setActiveTab] = useState('biography');
+  const [activeTab, setActiveTab] = useState(() => {
+    return window.location.pathname === '/blog_admin' ? 'blog_admin' : 'biography';
+  });
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const renderContent = () => {
@@ -39,6 +44,10 @@ function App() {
         return <Achievements />;
       case 'certifications':
         return <Certifications />;
+      case 'blog':
+        return <Blog />;
+      case 'blog_admin':
+        return <BlogAdmin />;
       case 'contact':
         return <Contact />;
       default:
